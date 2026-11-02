@@ -1,0 +1,21 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="MIT"
+[[mods]]
+modId="traintrace"
+version="0.2.1"
+displayName="Train Trace Diagnostics"
+authors="The_Stove"
+description="AI-generated local server/client carriage telemetry for research. Optional; not required by Train Sync Fix."
+[[dependencies.traintrace]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1,1.21.2)"
+side="BOTH"
+[[dependencies.traintrace]]
+modId="create"
+type="required"
+versionRange="[6.0.10,6.0.11)"
+side="BOTH"
+[[mixins]]
+config="traintrace.mixins.json"

@@ -1,0 +1,25 @@
+name: Bug report
+description: Report a reproducible synchronization problem
+body:
+  - type: markdown
+    attributes:
+      value: "This is an AI-generated, human-playtested beta. Please review logs for private data before sharing. Do not attach whole worlds by default."
+  - type: input
+    id: versions
+    attributes:
+      label: Versions
+      description: Minecraft, NeoForge, Create and Train Sync Fix versions
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction and expected behavior
+      description: Steps, relevant addons, and whether it happens without Train Sync Fix
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Logs or recording
+      description: Sanitized client latest.log and a short recording if available

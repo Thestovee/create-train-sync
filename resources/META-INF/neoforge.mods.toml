@@ -1,0 +1,23 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="MIT"
+issueTrackerURL="https://github.com/Thestovee/create-train-sync-fix/issues"
+[[mods]]
+modId="trainsyncfix"
+version="1.0.0-beta.1"
+displayName="Create: Train Sync Fix"
+authors="The_Stove"
+displayURL="https://github.com/Thestovee/create-train-sync-fix"
+description="Client-side fixes for Create train interpolation overshoot and inconsistent wheel-point recovery. AI-generated code; human playtested. Does not change train physics."
+[[dependencies.trainsyncfix]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1,1.21.2)"
+side="CLIENT"
+[[dependencies.trainsyncfix]]
+modId="create"
+type="required"
+versionRange="[6.0.10,6.0.11)"
+side="CLIENT"
+[[mixins]]
+config="trainsyncfix.mixins.json"

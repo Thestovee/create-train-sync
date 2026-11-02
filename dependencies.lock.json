@@ -1,0 +1,8 @@
+[
+  {"path":"net/neoforged/fancymodloader/loader/4.0.45/loader-4.0.45.jar","base":"https://maven.neoforged.net/releases/","sha256":"8390398e67df23e72d85ed809685be2752c8ec545b7cbb6ad4b70fdc81e4dcd4"},
+  {"path":"net/fabricmc/sponge-mixin/0.16.4+mixin.0.8.7/sponge-mixin-0.16.4+mixin.0.8.7.jar","base":"https://maven.fabricmc.net/","sha256":"921a2ca066d82d15d2939efd5eb22754e308db74b1e4277130a76625c3638dfd"},
+  {"path":"net/neoforged/mergetool/2.0.0/mergetool-2.0.0-api.jar","base":"https://maven.neoforged.net/releases/","sha256":"0260881294d8b218afe3d673f084d3745a55c28b35205d07d5e62d7f22202a00"},
+  {"path":"org/ow2/asm/asm/9.10.1/asm-9.10.1.jar","base":"https://repo.maven.apache.org/maven2/","sha256":"ed825d10ab1399c8c0cb669e688cf0c8c82629b4c8399b58352b68e92ca10fcb"},
+  {"path":"org/ow2/asm/asm-tree/9.10.1/asm-tree-9.10.1.jar","base":"https://repo.maven.apache.org/maven2/","sha256":"3dfb0d5b6a106cd40b5b250e39935fbf2f927f4477546a5369a3ac609cf0506b"},
+  {"path":"create-1.21.1-6.0.10.jar","base":"https://cdn.modrinth.com/data/LNytGWDc/versions/UjX6dr61/","sha256":"ef87fe5709f1ba1f5b8bb20a2925b5afb4669e178fd6d8bf10c167759eefe37a"}
+]
