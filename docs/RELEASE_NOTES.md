@@ -1,4 +1,4 @@
-# Create: Train Sync Fix 1.0.0-beta.1
+# Create: Train Sync 1.0.0-beta.1
 
 A targeted **client-side** fix for Create train flips and inconsistent wheel-point
 recovery under uneven updates. No changes to physics, speeds, braking or controls.
@@ -9,13 +9,13 @@ the multiplayer playtests. This is not independently human-audited code.
 
 ## Download
 
-- **Players:** `trainsyncfix-1.0.0-beta.1.jar` in the client's `mods` directory.
+- **Players:** `trainsync-1.0.0-beta.1.jar` in the client's `mods` directory.
 - **Researchers only:** optional `traintrace-0.2.1.jar`, installed separately on test
   server/clients. It is not needed for normal gameplay and records local private data.
 - SHA-256 files accompany both artifacts. Source code is MIT licensed.
 
 Requires Minecraft 1.21.1, NeoForge, Create 6.0.10 and Java 21. The server does not
-need Train Sync Fix. Do not install multiple versions of the same mod.
+need Train Sync. Do not install multiple versions of the same mod.
 
 Recorded playtests showed zero internal orientation flips after the patch on both
 clients and in a later six-carriage session. This is observational evidence, not

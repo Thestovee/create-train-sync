@@ -86,11 +86,12 @@ def main():
     for folder in [classes, component / 'resources']:
         for path in sorted(folder.rglob('*')):
             if path.is_file():
-                entries[path.relative_to(folder).as_posix()] = path.read_bytes()
-    entries['LICENSE'] = (ROOT / 'LICENSE').read_bytes()
-    entries['AI_DISCLOSURE.md'] = (ROOT / 'AI_DISCLOSURE.md').read_bytes()
+                entries[path.relative_to(folder).as_posix()] = path.read_bytes() if folder == classes else path.read_text(encoding='utf8').encode('utf8')
+    entries['LICENSE'] = (ROOT / 'LICENSE').read_text(encoding='utf8').encode('utf8')
+    entries['AI_DISCLOSURE.md'] = (ROOT / 'AI_DISCLOSURE.md').read_text(encoding='utf8').encode('utf8')
     entries['META-INF/MANIFEST.MF'] = f'Manifest-Version: 1.0\r\nImplementation-Title: {modid}\r\nImplementation-Version: {version}\r\n\r\n'.encode()
-    jar = ROOT / 'dist' / f'{modid}-{version}.jar'
+    artifact = 'trainsync' if modid == 'trainsyncfix' else modid
+    jar = ROOT / 'dist' / f'{artifact}-{version}.jar'
     archive(jar, entries)
     jar.with_suffix('.jar.sha256').write_text(digest(jar) + '  ' + jar.name + '\n', encoding='ascii')
     print(f'Built {jar.name}: {digest(jar)}')

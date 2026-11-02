@@ -1,7 +1,7 @@
 # Train Trace — optional research tool
 
 AI-generated diagnostic code; see [the disclosure](../../AI_DISCLOSURE.md).
-This is a local recording tool, **not** a dependency of Train Sync Fix.
+This is a local recording tool, **not** a dependency of Train Sync.
 
 Build from the repository root with `python build.py --component trace`. Install
 the resulting `traintrace-0.2.1.jar` on the test server and each client to record

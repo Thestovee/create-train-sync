@@ -8,14 +8,14 @@ body:
     id: versions
     attributes:
       label: Versions
-      description: Minecraft, NeoForge, Create and Train Sync Fix versions
+      description: Minecraft, NeoForge, Create and Train Sync versions
     validations:
       required: true
   - type: textarea
     id: reproduction
     attributes:
       label: Reproduction and expected behavior
-      description: Steps, relevant addons, and whether it happens without Train Sync Fix
+      description: Steps, relevant addons, and whether it happens without Train Sync
     validations:
       required: true
   - type: textarea

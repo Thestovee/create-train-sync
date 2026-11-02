@@ -6,7 +6,7 @@ modId="traintrace"
 version="0.2.1"
 displayName="Train Trace Diagnostics"
 authors="The_Stove"
-description="AI-generated local server/client carriage telemetry for research. Optional; not required by Train Sync Fix."
+description="AI-generated local server/client carriage telemetry for research. Optional; not required by Train Sync."
 [[dependencies.traintrace]]
 modId="minecraft"
 type="required"

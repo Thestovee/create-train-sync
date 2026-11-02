@@ -23,9 +23,9 @@ jobs:
       - run: python build.py
       - name: Check repeatable JAR
         run: |
-          cp dist/trainsyncfix-1.0.0-beta.1.jar /tmp/first.jar
+          cp dist/trainsync-1.0.0-beta.1.jar /tmp/first.jar
           python build.py --offline
-          cmp /tmp/first.jar dist/trainsyncfix-1.0.0-beta.1.jar
+          cmp /tmp/first.jar dist/trainsync-1.0.0-beta.1.jar
       - run: python build.py --component trace --offline
       - run: python tools/package_release.py
       - uses: actions/upload-artifact@v4

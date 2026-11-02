@@ -21,8 +21,8 @@ for path in sorted(ROOT.rglob('*')):
         continue
     if path.suffix in {'.class', '.log', '.csv', '.dat', '.jar', '.pyc'}:
         raise RuntimeError(f'Unexpected binary/private file in source allowlist: {relative}')
-    entries['create-train-sync-fix/' + relative.as_posix()] = path.read_bytes()
-target = ROOT / 'dist/create-train-sync-fix-1.0.0-beta.1-sources.zip'
+    entries['create-train-sync/' + relative.as_posix()] = path.read_text(encoding='utf8').encode('utf8')
+target = ROOT / 'dist/create-train-sync-1.0.0-beta.1-sources.zip'
 build.archive(target, entries)
 target.with_suffix('.zip.sha256').write_text(build.digest(target) + '  ' + target.name + '\n', encoding='ascii')
 print(f'Packaged {len(entries)} source files: {target.name}')

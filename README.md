@@ -1,4 +1,4 @@
-# Create: Train Sync Fix
+# Create: Train Sync
 
 A client-side addon for **Minecraft 1.21.1 / NeoForge / Create 6.0.10** that reduces
 train flips and distorted carriage geometry during uneven state updates.
@@ -20,8 +20,8 @@ balance.** It does not replace Create or require a server-side counterpart.
 ## Install
 
 1. Close Minecraft.
-2. Put `trainsyncfix-1.0.0-beta.1.jar` in your client's `mods` folder.
-3. Keep only one version of Train Sync Fix installed, then start the game.
+2. Put `trainsync-1.0.0-beta.1.jar` in your client's `mods` folder.
+3. Keep only one version of Train Sync installed, then start the game.
 
 Requires **Java 21**, Minecraft **1.21.1**, **NeoForge**, and **Create 6.0.10**.
 Install on each client that wants the fix. Train Trace is optional and is not
@@ -53,7 +53,7 @@ select the protections before game startup:
 | `-Dtrainsyncfix.cap=false` | Disable only interpolation bounding |
 | `-Dtrainsyncfix.recovery=false` | Disable only coherent recovery |
 
-Defaults are enabled. These are JVM arguments, not chat commands. To uninstall,
+Defaults are enabled. The internal ID and JVM prefix remain `trainsyncfix` for compatibility with the playtested prototype. These are JVM arguments, not chat commands. To uninstall,
 close Minecraft and remove the JAR. There are no save migrations or custom packets.
 The mod itself creates no telemetry logs and sends no analytics.
 
@@ -81,7 +81,7 @@ repeatable packaging. See [docs/TESTING.md](docs/TESTING.md) for validation limi
 
 - [Research and measurements](research/REPORT.md)
 - [Changelog](CHANGELOG.md)
-- [Report a bug](https://github.com/Thestovee/create-train-sync-fix/issues)
+- [Report a bug](https://github.com/Thestovee/create-train-sync/issues)
 - [AI disclosure](AI_DISCLOSURE.md)
 - [MIT license](LICENSE)
 
